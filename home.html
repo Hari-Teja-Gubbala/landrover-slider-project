@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Rover</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/Logo1.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">MODELS</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon">
+        </div>
+        <div class="row">
+            <div class="col1">
+                <h1>Land Rover</h1>
+                <p style="line-height: 20px;">Land Rover is a British automotive brand renowned for producing rugged and luxurious off-road vehicles. Established in 1948, its iconic designs and advanced technology have made it synonymous with adventure and exploration.</p>
+                <button type="button">Explore</button>
+            </div>
+            <div class="col2">
+                    <!--iamge slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slideimages start-->
+                <div class="slide first">
+                    <img class="image" src="evoque.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="image" src="velar.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="image" src="Sport.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img class="image" src="vogue.jpg" alt="">
+                </div>
+                <!--slideimages end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!---manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!---manual navigation end-->
+        </div>
+    <!--iamge slider end-->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
